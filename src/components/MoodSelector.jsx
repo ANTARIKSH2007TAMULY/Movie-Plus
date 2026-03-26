@@ -78,14 +78,14 @@ function MoodSelector() {
   }, [mood, sortBy, minRating, year]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <div className="min-h-screen text-slate-900 dark:text-slate-100">
       <div className="mx-auto w-full max-w-[2000px] px-4 py-8 sm:px-6">
         <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="text-3xl font-extrabold tracking-tight text-black dark:text-slate-100">
+            <h1 className="text-3xl font-extrabold tracking-tight !text-slate-900 dark:!text-slate-100">
               Mood picks
             </h1>
-            <p className="mt-1 text-sm text-slate-800 dark:text-slate-300">
+            <p className="mt-1 text-sm !text-slate-700 dark:!text-slate-300">
               Pick a mood, tune filters, and discover movies. Refreshing this page shuffles results.
             </p>
           </div>
@@ -103,7 +103,7 @@ function MoodSelector() {
         </div>
 
         <div className="mb-8 grid grid-cols-1 gap-3 rounded-2xl border border-slate-300 bg-white p-4 shadow-soft dark:border-slate-800 dark:bg-slate-950 sm:grid-cols-2 lg:grid-cols-4">
-          <label className="grid gap-1 text-sm font-semibold text-slate-950 dark:text-slate-200">
+          <label className="grid gap-1 text-sm font-semibold !text-slate-900 dark:!text-slate-200">
             Mood
             <select
               value={mood}
@@ -118,7 +118,7 @@ function MoodSelector() {
             </select>
           </label>
 
-          <label className="grid gap-1 text-sm font-semibold text-slate-950 dark:text-slate-200">
+          <label className="grid gap-1 text-sm font-semibold !text-slate-900 dark:!text-slate-200">
             Sort by
             <select
               value={sortBy}
@@ -132,7 +132,7 @@ function MoodSelector() {
             </select>
           </label>
 
-          <label className="grid gap-1 text-sm font-semibold text-slate-950 dark:text-slate-200">
+          <label className="grid gap-1 text-sm font-semibold !text-slate-900 dark:!text-slate-200">
             Min rating: <span className="font-extrabold">{minRating}</span>
             <input
               type="range"
@@ -145,7 +145,7 @@ function MoodSelector() {
             />
           </label>
 
-          <label className="grid gap-1 text-sm font-semibold text-slate-950 dark:text-slate-200">
+          <label className="grid gap-1 text-sm font-semibold !text-slate-900 dark:!text-slate-200">
             Year
             <select
               value={year}
