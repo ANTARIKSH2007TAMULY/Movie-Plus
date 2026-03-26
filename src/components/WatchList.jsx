@@ -64,9 +64,9 @@ function Watchlist() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen text-slate-900 dark:text-slate-100">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
-        <h1 className="mb-6 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
+        <h1 className="mb-6 text-3xl font-extrabold tracking-tight text-slate-950 dark:text-slate-100">
           My Watchlist
         </h1>
 

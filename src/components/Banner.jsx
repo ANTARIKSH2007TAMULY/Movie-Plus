@@ -3,7 +3,7 @@ import React from "react";
 function Banner({ title, description, image, link, trailerKey }) {
   return (
     <div
-      className="relative h-[850px] w-full bg-cover bg-center flex items-center"
+      className="relative flex h-[62vh] min-h-[420px] w-full items-center bg-cover bg-center sm:h-[72vh] sm:min-h-[520px] lg:h-[850px]"
       style={{
         backgroundImage: `url(${image})`,
       }}
@@ -23,10 +23,12 @@ function Banner({ title, description, image, link, trailerKey }) {
 
       <div className="absolute inset-0 z-10 bg-black/60"></div>
 
-      <div className="relative z-20 text-white px-12 max-w-2xl">
-        <h1 className="text-8xl font-bold mb-4">{title}</h1>
+      <div className="relative z-20 max-w-2xl px-5 text-white sm:px-8 lg:px-12">
+        <h1 className="mb-3 line-clamp-4 text-4xl font-extrabold leading-tight sm:text-6xl lg:text-8xl">
+          {title}
+        </h1>
 
-        <p className="text-lg mb-6">
+        <p className="mb-6 line-clamp-3 text-sm text-white/90 sm:text-base lg:text-lg">
           {description}
         </p>
 
@@ -34,7 +36,7 @@ function Banner({ title, description, image, link, trailerKey }) {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition"
+          className="inline-block rounded-lg bg-yellow-500 px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-yellow-600 sm:px-6 sm:py-3 sm:text-base"
         >
           ▶ Watch Now
         </a>
