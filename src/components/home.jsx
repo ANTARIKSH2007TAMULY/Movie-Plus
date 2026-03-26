@@ -133,12 +133,18 @@ function Home() {
             <p className="mx-auto mb-7 max-w-2xl text-base text-white/90 sm:text-lg">
               Start browsing now and create your personalized watchlist.
             </p>
-            <a
-              href="/movies"
+            {/* <a
+              href="/Movie-Plus/movies"
               className="inline-flex items-center justify-center rounded-xl bg-yellow-400 px-6 py-3 font-semibold text-slate-900 shadow-sm transition hover:bg-yellow-300"
             >
               Browse Movies
-            </a>
+            </a> */}
+            <Link
+              to="/movies"
+              className="inline-flex items-center justify-center rounded-xl bg-yellow-400 px-6 py-3 font-semibold text-slate-900 shadow-sm transition hover:bg-yellow-300"
+            >
+              Browse Movies
+            </Link>
           </div>
         </div>
       </section>
