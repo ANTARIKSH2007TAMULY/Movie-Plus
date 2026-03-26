@@ -1,4 +1,30 @@
+/* @import "tailwindcss"; */
+
+/* App-wide base styling (keeps pages consistent) */
+/* :root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+} */
+/* 
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+html.dark {
+  color-scheme: dark;
+} */
+
+/* html.dark body {
+  @apply bg-slate-950 text-slate-100;
+} */
 @import "tailwindcss";
+
+/* Tell Tailwind v4 to use class-based dark mode (matches useTheme hook) */
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* App-wide base styling (keeps pages consistent) */
 :root {
