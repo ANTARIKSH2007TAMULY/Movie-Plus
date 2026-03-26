@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard";
 import Pagination from "./Pagination";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { discoverMovies } from "../lib/tmdb";
-
+//moodselector
 const MOODS = [
   { value: "happy", label: "Happy", genres: [35, 16, 10751] }, // Comedy, Animation, Family
   { value: "sad", label: "Sad", genres: [18, 10749] }, // Drama, Romance
