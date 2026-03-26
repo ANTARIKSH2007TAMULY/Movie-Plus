@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? '/Moviesplus-/' : '/',
+  base: process.env.GITHUB_ACTIONS ? '/Moviesviewer/' : '/',
   plugins: [react(), tailwindcss()],
 })
